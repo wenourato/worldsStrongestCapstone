@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>WorldsStrongest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+
+
+        <div class="container">
+            <img src="images/logo-1.png" alt="">
+            <button id="bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Fighters.html">Fighters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Favorites.html">Favorite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                       <button id="logout-btn">Logout</button>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-search" style="color: black"></i>
+                        <a href="./Cart.html">
+                            <i class="bi bi-bag"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h5>FEATURED FIGHTERS</h5>
+            <h1><span>Heavy</span> Hitters</h1>
+            <p>I wouldn't wanna' get in their way... <br>These fighters pack a punch.</p>
+            <button onclick="document.getElementById('featured').scrollIntoView()">Shop Now</button>
+        </div>
+    </section>
+    <section id="brand" class="container">
+        <div class="row m-0 py-5">
+            <img class="img-fluid col-lg-2 col-md-4 col-6 logo-img" src="images/DBS.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6 logo-img" src="images/general%20mills.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6 logo-img" src="images/kellogs.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6 logo-img" src="images/nickolodean.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6 logo-img" src="images/nintendo.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6 logo-img" src="images/pokemon.png" alt="">
+        </div>
+    </section>
+    <section id="new" class="w-100">
+        <div class="row p-0 m-0">
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="images/shield.webp" alt="">
+                <div class="details">
+                    <h2>Defensive Warriors</h2>
+                    <button onclick="document.getElementById('featured-2').scrollIntoView()" class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="images/health.png" alt="">
+                <div class="details">
+                    <h2>Tanks</h2>
+                    <button onclick="document.getElementById('featured-3').scrollIntoView()" class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="images/balance.jpg" alt="">
+                <div class="details">
+                    <h2>Balanced Warriors</h2>
+                    <button onclick="document.getElementById('featured-4').scrollIntoView()" class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Heavy Hitters</h3>
+            <hr class="mx-auto">
+            <p>Great Deals on Powerful Warriors</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/goku.jpg" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="p-name">Goku</h5>
+                <h4 class="p-price">$150.00</h4>
+                <button data-fighter-id="1" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/paperbowser.webp" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Paper Bowser</h5>
+                <h4 class="p-price">$90.00</h4>
+                <button data-fighter-id="14" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/Darbus.webp" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Darbus</h5>
+                <h4 class="p-price">$60.00</h4>
+                <button data-fighter-id="43" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/samus.jpg" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Samus</h5>
+                <h4 class="p-price">$85.00</h4>
+                <button data-fighter-id="12" class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-2" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Defensive Warriors</h3>
+            <hr class="mx-auto">
+            <p>Better hit hard... These fighters are tough nuts to crack.</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/buu.png" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="p-name">Majin Buu</h5>
+                <h4 class="p-price">$220.00</h4>
+                <button data-fighter-id="6" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/IMG_5969.png" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                </div>
+                <h5 class="p-name">Sadie Potatoe Pants</h5>
+                <h4 class="p-price">$300.00</h4>
+                <button data-fighter-id="31" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/blastoise.png" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Blastoise</h5>
+                <h4 class="p-price">$95.00</h4>
+                <button data-fighter-id="41" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/ozai.png" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Ozai</h5>
+                <h4 class="p-price">$120.00</h4>
+                <button data-fighter-id="41" class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-3" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Tanks</h3>
+            <hr class="mx-auto">
+            <p>Better start chippin' away at these HP heavy tanks.</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/teen%20gohan.jpg" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="p-name">Teen Gohan</h5>
+                <h4 class="p-price">$135.00</h4>
+                <button data-fighter-id="3" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/50.webp" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">50 Cent</h5>
+                <h4 class="p-price">$180.00</h4>
+                <button data-fighter-id="37" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/venasaur.webp" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Venasaur</h5>
+                <h4 class="p-price">$150.00</h4>
+                <button data-fighter-id="28" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/kirby.gif" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Kirby</h5>
+                <h4 class="p-price">$210.00</h4>
+                <button data-fighter-id="10" class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-4" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Balanced Warriors</h3>
+            <hr class="mx-auto">
+            <p>These warriors have great all around stats</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/Tony-Hawk-009.webp" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+                <h5 class="p-name">Tony Hawk</h5>
+                <h4 class="p-price">$100.00</h4>
+                <button data-fighter-id="38" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/beetlejuice.jpg" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Beetlejuice</h5>
+                <h4 class="p-price">$10.00</h4>
+                <button data-fighter-id="37" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/ang.png" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+
+                </div>
+                <h5 class="p-name">Avatar Ang</h5>
+                <h4 class="p-price">$65.00</h4>
+                <button data-fighter-id="42" class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/subzero.jpg" alt="">
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+
+                </div>
+                <h5 class="p-name">Sub Zero</h5>
+                <h4 class="p-price">$110.00</h4>
+                <button data-fighter-id="32" class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="pl-3">
+                <img style="height: 7rem; width: 42rem; object-fit: contain" src="images/logo-1.png" alt="">
+            </div>
+            <div class="row container mx-auto pt-5">
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <p style="color: #D8D8D8">Worlds Strongest is a collection of the best of the best. Characters collected across the multiverse,
+                        pitted against eachother to find out once and for all...who is the strongest.</p>
+                </div>
+
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Featured</h5>
+                    <ul class="text-uppercase list-unstyled">
+                        <li><a href="#">Heavy Hitters</a></li>
+                        <li><a href="#">Defensive Warriors</a></li>
+                        <li><a href="#">Tanks</a></li>
+                        <li><a href="#">Balanced Warriors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Contact Us</h5>
+                    <div>
+                        <h6 class="text-uppercase">Phone</h6>
+                        <p style="color: #D8D8D8">(555)555-5555</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Email</h6>
+                        <p style="color: #D8D8D8">support@worldsstrongest.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img style="height: 5rem; object-fit: scale-down" class="img-fluid mb-3" id="credit-card"
+                         src="images/credit.png" alt="">
+
+                </div>
+                <div style="color: #D8D8D8" class="col-lg-4 col-md-6 col-12 pt-4">
+                    <p>Worlds Strongest 2021. All Rights Reserved</p>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pt-4">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./javascript/Index.js"></script>
+</body>
+</html>

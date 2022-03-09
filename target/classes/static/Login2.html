@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Login2.css">
+</head>
+<body>
+<div class="login-div">
+    <div class="logo">
+        <img src="images/logo-1.png" alt="" width='150'>
+    </div>
+
+    <div class="title">Worlds Strongest</div>
+    <div class="subtitle">Choose your warrior</div>
+    <div class="form">
+        <form id="login-form">
+        <div class="loginUsername">
+    <input type="text" placeholder="Username" id="loginUsername">
+</div>
+
+        <div class="loginPassword">
+<input type="Password" placeholder="Password" id="loginPassword">
+
+        </div>
+        <div class="options">
+        <div class="remember-me">
+            <input id="remember-me" type="checkbox">
+            <label for="remember-me">Remember Me?</label>
+        </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+    </div>
+
+        <button onclick="handleSubmit()" type="submit" class="signin-btn">LOGIN</button>
+        <div class="sign-up">
+            <a href="Register.html">New to Worlds Strongest? Sign Up here!</a>
+        </div>
+</div>
+</form>
+
+
+</div>
+<script src="./javascript/login.js"></script>
+</body>
+</html>
